@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
   });
   app.disable("x-powered-by");
   next();
-});
+}); 
 
 app.get("/file/*?", function (req, res, next) {
   if (req.params[0] === ".env") {
